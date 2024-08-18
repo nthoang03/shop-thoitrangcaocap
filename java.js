@@ -1,11 +1,11 @@
-const header=document.quaryselector("herder");
+const header = document.querySelector("herder");
 
-window.addEventListener("scroll",function(){
-	header.classList.toggle("sticky", this.window.scrollY > 0);
+window.addEventListener("scroll", function(){
+	header.classList.toggle ("sticky", this.window.scrollY > 0);
 })
 
 let menu = document.querySelector('#menu-icon');
-let navmenu = document.queryselector('.navmenu');
+let navmenu = document.querySelector('.navmenu');
 
 menu.onclick = () => {
 	menu.classList.toggle('bx-x');

@@ -113,7 +113,7 @@ section{
 	background-color: orange;
 	color: #000;
 }
-..main-btn i{
+.main-btn i{
 	vertical-align: middle;
 }
 .down-arrow{
@@ -361,12 +361,22 @@ height: auto;
 .end-text{
 	background-color: #edfff1;
 	text-align: center;
+	padding: 20px;
 	width: 100%;
 	height: auto;
+	text-align: center;
+	
 }
-.end-text img{
-	width: 100%;
-}
+.end-text p{
+	color:#111;
+	text-transform: capitalize;
+	
+} 
+.end-text span{
+	color:#111;
+	text-transform: capitalize;
+	margin-right: 80px;
+} 
 /*responsive*/
 @media(max-width:890px){
 	header{
@@ -384,7 +394,7 @@ height: auto;
 		transition: .4s;
 	}
 	.main-btn{
-		padding: 10px 2-px;
+		padding: 10px 20px;
 		transition: .4s;
 	}
 }
@@ -407,6 +417,86 @@ height: auto;
 		margin: 18px 0;
 	}
 	.navmenu.open{
-		right: 0;
+		right: 0%;
 	}
+}
+
+
+.position-relative {
+	position: relative;
+}
+
+.badge-category {
+	display: block;
+	color: #000;
+	background: #fff;
+	border-radius: 20px;
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: fit-content;
+	box-shadow: 1px 1px 4px #888888;
+	font-size: 15px;
+}
+
+
+/* Chon mau san pham */
+.color-swatches {
+	padding: 10px 0;
+}
+
+.color-swatches__list {
+	display: flex;
+  }
+  
+  .color-swatches__swatch {
+	position: relative;
+	display: block;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  .color-swatches__swatch::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	border-radius: inherit;
+	pointer-events: none;
+	transition: 0.2s;
+  }
+  .color-swatches__swatch:hover::before {
+	border-color: #888888;
+  }
+  
+  .color-swatches__item--selected .color-swatches__swatch::before {
+	border: 1px solid #000;
+	width: calc(100% + 3px);
+	height: calc(100% + 3px);
+  }
+  
+  .hide {
+	display: none !important;
+  }
+  /* Gia tien san pham */
+.regular-price {
+	font-weight: bold;
+}
+
+.sale-product-price {
+	color: orangered
+}
+
+.sale-price {
+	color: #8b8b8b;
+	text-decoration: line-through;
 }
