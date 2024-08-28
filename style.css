@@ -149,13 +149,14 @@ header.sticky{
 .column1 {
   width: 100%;
 
-  
+ padding-right: 10px;
+ padding-bottom: 10px;
   display: flex;
 }
 .column1 img{
 	width: 100%;
 	height: 740px;
-  padding-right: 10px;
+ margin-left: 10px;
   background-color: #f2f2f2;
 
 }
@@ -164,7 +165,7 @@ header.sticky{
   width: 100%;
 height: 740px;
   padding-left: 10px;
-
+  
 }
 
 
@@ -176,6 +177,7 @@ height: 365px;
   margin-block-end: 10px;
  
   background-color: #f2f2f2;
+  
 }
 
 
@@ -195,23 +197,23 @@ li {
 	width: 100%;
 	height: 100%;
 	display: flex;
+	
 }
 .column3 {
   width: 100%;
- 
+ height: 100%;
  
 }
 .column3 img{
 	width: 100%;
 	height: 740px;
   padding-left: 10px;
- 
+
   display: flex;
 
 }
 .container {
-	width: 100%;
-	height: 640px;
+
   display: grid;
   text-align: center;
   grid-template-columns: repeat(auto-fit,minmax(160px,auto));
